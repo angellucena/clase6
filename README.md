@@ -30,8 +30,4 @@
 
 ---
 
-## 💻 Instrucciones para Ejecución Local
 
-1. Clona este repositorio en tu equipo:
-   ```bash
-   git clone https://github.com/TU-USUARIO/concerts-week.git
