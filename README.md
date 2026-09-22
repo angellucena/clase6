@@ -6,8 +6,8 @@
 
 ## 🔗 Enlaces del Proyecto
 
-* **Repositorio Público GitHub:** `https://github.com/TU-USUARIO/concerts-week`
-* **Sitio Desplegado en Vivo (GitHub Pages):** `https://TU-USUARIO.github.io/concerts-week/`
+* **Repositorio Público GitHub:** `https://github.com/angellucena/clase6`
+* **Sitio Desplegado en Vivo (GitHub Pages):** `https://angellucena.github.io/clase6/`
 
 ---
 
