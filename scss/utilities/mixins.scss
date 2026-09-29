@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+// ==========================================================================
+// MIXINS REUTILIZABLES
+// ==========================================================================
+
+// Centrado Flexbox rápido
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Distribución Flexbox entre extremos
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Media Query para pantallas Desktop (min-width: 1024px)
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Transición Suave Reutilizable
+@mixin transition-smooth($prop: all, $time: 0.3s) {
+  transition: $prop $time ease-in-out;
+}
+
+

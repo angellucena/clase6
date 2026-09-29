@@ -1,0 +1,50 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.main-footer {
+  background-color: $color-bg-card;
+  border-top: 1px solid $color-border;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+  }
+
+  .footer-nav .footer-list {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: $radius-sm;
+  @include transition-smooth;
+
+  &:hover {
+    background-color: $color-border;
+    transform: translateY(-2px);
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+

@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar-toggler {
+  border-color: $color-border !important;
+  background-color: $color-bg-primary !important;
+  @include transition-smooth(border-color);
+
+  &:hover {
+    border-color: $color-primary !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.4) !important;
+  }
+
+  &-icon {
+    filter: invert(1);
+  }
+}
+
+.navbar-custom {
+  .nav-link {
+    color: $color-text-main !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: $radius-md;
+    @include transition-smooth;
+
+    &:hover {
+      color: $color-primary !important;
+      background-color: $color-border;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-primary;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.active-page {
+      color: $color-primary !important;
+      background-color: rgba(139, 92, 246, 0.15);
+      font-weight: 700;
+    }
+  }
+}
+
+

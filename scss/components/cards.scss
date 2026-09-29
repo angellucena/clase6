@@ -1,0 +1,62 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.card-interactive {
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border;
+  border-left: 4px solid $color-primary;
+  padding: 1rem;
+  border-radius: $radius-lg;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include transition-smooth;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $color-primary;
+    box-shadow: $shadow-neon;
+
+    .concert-card-image {
+      transform: scale(1.02);
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+.concert-card-figure {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+// Afiche vertical en proporción 3:4 estilo recital
+.concert-card-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #000000;
+  border-radius: $radius-md;
+  border: 1px solid $color-border;
+  @include transition-smooth(transform, 0.4s);
+}
+
+.concert-card-caption {
+  font-size: 0.8rem;
+  color: $color-text-muted;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.concert-info {
+  color: $color-accent;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+

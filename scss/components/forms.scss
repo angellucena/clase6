@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  color: $color-text-main;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  @include transition-smooth;
+
+  &:hover {
+    border-color: $color-accent;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3);
+  }
+}
+
+
