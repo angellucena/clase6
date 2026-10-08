@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+// ==========================================================================
+// _extends.scss - PLACEHOLDERS REUTILIZABLES DE SCSS
+// ==========================================================================
+
+%card-base {
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: 1.25rem;
+}
+
+%form-field-base {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  color: $color-text-main;
+  font-family: $font-body;
+  font-size: 0.95rem;
+}

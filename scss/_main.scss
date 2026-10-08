@@ -1,24 +1,23 @@
 // ==========================================================================
-// ARCHIVO MAESTRO ORQUESTADOR DE SCSS (ÚNICO PUNTO DE ENTRADA)
+// main.scss - ÚNICO PUNTO DE ENTRADA (COMPILA A styles/styles.css)
 // ==========================================================================
 
-// 1. Utilities
+// 1. Utilities (Importa _variables.scss, _mixins.scss y _extends.scss)
 @use "utilities/variables" as *;
 @use "utilities/mixins" as *;
+@use "utilities/extends";
 
-// 2. Base
+// 2. Base (Importa _base.scss y _tipografia.scss)
 @use "base/base";
 @use "base/tipografia";
 
-// 3. Layout
+// 3. Layout (Importa _header.scss, _nav.scss y _footer.scss)
 @use "layout/header";
 @use "layout/nav";
 @use "layout/footer";
 
-// 4. Components
+// 4. Components (Importa _buttons.scss, _cards.scss, _carousel.scss y _forms.scss)
 @use "components/buttons";
 @use "components/cards";
 @use "components/carousel";
 @use "components/forms";
-
-

@@ -1,6 +1,5 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
-
+@use '../utilities/mixins' as *;
 .navbar-toggler {
   border-color: $color-border !important;
   background-color: $color-bg-primary !important;
